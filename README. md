@@ -1,0 +1,110 @@
+# Semiconductor Manufacturing Process – Yield Prediction
+
+## 📌 Project Overview
+
+This project focuses on predicting semiconductor manufacturing process
+outcomes using machine learning.
+
+The project uses sensor/process measurements to classify manufacturing
+samples into Pass or Fail categories.
+
+## 🎯 Objectives
+
+- Analyze semiconductor manufacturing sensor data.
+- Clean and preprocess the dataset.
+- Handle missing values.
+- Analyze the Pass/Fail target distribution.
+- Address class imbalance using SMOTE.
+- Train multiple machine learning classification models.
+- Compare model performance.
+- Perform hyperparameter tuning using GridSearchCV.
+- Identify important sensor features.
+- Investigate whether feature reduction can maintain model performance.
+- Save the final trained model.
+
+## 📊 Dataset
+
+Dataset: SECOM Semiconductor Manufacturing Dataset
+
+- Samples: 1567
+- Sensor measurements: 590
+- Target:
+  - -1 → Pass
+  - 1 → Fail
+- Timestamp information is available for the samples.
+
+## 🛠️ Technologies Used
+
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Imbalanced-learn
+- Joblib
+- Jupyter Notebook
+
+## 🔄 Methodology
+
+1. Data Loading
+2. Data Exploration
+3. Data Cleaning
+4. Missing Value Handling
+5. Exploratory Data Analysis
+6. Train-Test Split
+7. Feature Standardization
+8. SMOTE Class Balancing
+9. Model Training
+10. Cross-Validation
+11. GridSearchCV Hyperparameter Tuning
+12. Feature Importance Analysis
+13. Feature Reduction
+14. Model Comparison
+15. Final Model Saving
+
+## 🤖 Machine Learning Models
+
+The following classification algorithms were evaluated:
+
+- Logistic Regression
+- Random Forest
+- Support Vector Machine (SVM)
+
+## 📈 Evaluation
+
+The models were evaluated using:
+
+- Training Accuracy
+- Testing Accuracy
+- Cross-Validation
+- Classification Report
+- Confusion Matrix
+
+## 🔍 Feature Analysis
+
+Feature importance was analyzed using Random Forest to identify sensor
+features that contribute to the prediction.
+
+A reduced feature set was also tested to investigate whether all available
+sensor features are necessary.
+
+## 💾 Saved Model
+
+The trained model is saved as:
+
+`semiconductor_yield_best_model.joblib`
+
+## 📁 Project Structure
+
+```text
+Capstone-2-Semiconductor-Yield-Prediction/
+│
+├── Capstone_2_Semiconductor.ipynb
+├── sensor-data.csv
+├── semiconductor_yield_best_model.joblib
+├── secom.data
+├── secom_labels.data
+├── secom.names
+├── .gitignore
+└── README.md
